@@ -9,6 +9,7 @@ api/services/account_service.py
                                          name: Optional[str] = None,
                                          is_setup: Optional[bool] = False):
         """Check if user have a workspace or not"""
+        # 增加对owner的判断
         available_ta = (TenantAccountJoin.query.filter_by(
             account_id=account.id).filter_by(role="owner").order_by(
                 TenantAccountJoin.id.asc()).first())
@@ -40,5 +41,5 @@ api/services/feature_service.py
         system_features.enable_email_password_login = dify_config.ENABLE_EMAIL_PASSWORD_LOGIN
         system_features.enable_social_oauth_login = dify_config.ENABLE_SOCIAL_OAUTH_LOGIN
         system_features.is_allow_register = dify_config.ALLOW_REGISTER
-        system_features.is_allow_create_workspace = True  # dify_config.ALLOW_CREATE_WORKSPACE
+        system_features.is_allow_create_workspace = True  # 默认为true dify_config.ALLOW_CREATE_WORKSPACE
 ```
