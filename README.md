@@ -1,5 +1,8 @@
 # dify-mulit-workspace
 二次开发dify实现多workspace
+
+本仓库为AI带路党Pro视频准备[通过二次开发Dify社区版实现多workspace功能并且通过workspace管理应用-Dify二次开发系列](https://www.bilibili.com/video/BV1RFChYxEhJ/)
+
 修改两处代码
 
 api/services/account_service.py
