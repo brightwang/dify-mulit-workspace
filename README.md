@@ -1,6 +1,8 @@
 # dify-mulit-workspace
 二次开发dify实现多workspace
 
+任何修改请自行参考不同版本许可证协议并咨询官方，本up主只做技术探讨，所讨论功能也和本人供职公司无关，相关版权问题概不负责
+
 本仓库为AI带路党Pro视频准备[通过二次开发Dify社区版实现多workspace功能并且通过workspace管理应用-Dify二次开发系列](https://www.bilibili.com/video/BV1RFChYxEhJ/)
 
 修改两处代码
